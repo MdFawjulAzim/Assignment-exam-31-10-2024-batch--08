@@ -1,0 +1,537 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Features Section */
+#features .feature-box {
+    transition: transform 0.3s ease;
+}
+
+#features .feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    color: #ddd;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Drop shadow as seen in Figma */
+    padding: 20px 0; /* Padding based on Figma dimensions */
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    color: #6c63ff !important; /* Purple color for active link */
+    font-weight: 500;
+}
+
+/* Link Styling */
+.nav-link {
+    color: #333 !important; /* Dark color for inactive links */
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+/* Contact Me Button */
+.btn-outline-primary {
+    color: #6c63ff; /* Purple text color */
+    border-color: #6c63ff; /* Purple border */
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c63ff; /* Purple background on hover */
+    color: #fff; /* White text on hover */
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5FCFF; /* Background color for the hero section */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #6c63ff; /* Purple color for highlighted text */
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #5848cc;
+    border-color: #5848cc;
+}
+
+/* Image Section */
+.image-container {
+    background-color: #D9EFFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.profile-image {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Decorative Elements (Stars) */
+.image-container::before,
+.image-container::after {
+    content: '✨';
+    color: #6c63ff;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+.image-container::before {
+    top: -10px;
+    left: -20px;
+}
+
+.image-container::after {
+    bottom: -10px;
+    right: -20px;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Expertise Section Styling */
+.expertise-section {
+    background-color: #ECFFFD; /* Light blue background */
+    padding: 60px 0;
+}
+
+.text-center .small-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Expertise Cards */
+.expertise-card {
+    background-color: #F5FCFF; /* Slightly lighter blue */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-bottom: 4px solid transparent; /* Placeholder for hover effect */
+}
+
+.expertise-card:hover {
+    border-bottom: 4px solid #6c63ff; /* Purple border on hover */
+}
+
+.expertise-card .icon {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.expertise-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.expertise-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 60px 0;
+}
+
+.subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.position-relative {
+    position: relative;
+}
+
+.abstract-bg {
+    background-color: #6c63ff; /* Purple background */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(10% 0%, 100% 10%, 90% 90%, 0% 100%); /* Abstract shape */
+    z-index: 1;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Text Content */
+.about-section p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    background-color: #ECFFFD; /* Light blue background */
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Dribbble Button */
+.btn-dribbble {
+    background-color: #FF5C8D;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-dribbble:hover {
+    background-color: #e54d79;
+    color: #fff;
+}
+
+/* Portfolio Card Styling */
+.portfolio-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: #6c63ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    background-color: #F5FCFF; /* Light blue background */
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00B4A6; /* Border color to match design */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stars {
+    color: #00B4A6; /* Star color */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.client-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.client-name {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.client-company {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #F5FCFF; /* Light blue background */
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control, .contact-form .form-select {
+    border: 1px solid #6c63ff; /* Purple border */
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.contact-form .form-control:focus, .contact-form .form-select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+.contact-form .form-check-input {
+    border-color: #6c63ff;
+}
+
+.contact-form .form-check-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.btn-submit {
+    background-color: #6c63ff; /* Purple background */
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #5848cc; /* Darker purple on hover */
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #F5FCFF; /* Light blue background */
+    color: #333;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-link {
+    color: #333;
+    margin: 0 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #006B6A; /* Dark teal color on hover */
+}
+
+.hr {
+    border-top: 1px solid #333;
+}
+
+.heart {
+    color: #FF5C8D; /* Heart color */
+}
+
+.footer-policy-link {
+    color: #333;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer-policy-link:hover {
+    text-decoration: underline;
+}
