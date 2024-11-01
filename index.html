@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="home">
 
 <!-- Header Section -->
 
@@ -17,7 +17,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
     <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
             <img src="./asset/Logo.png" alt="Logo" height="30">
         </a>
 
@@ -30,32 +30,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About me</a>
+                    <a class="nav-link" href="#about">About me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" href="#testimonial">Testimonials</a>
                 </li>
             </ul>
-            <a href="#" class="btn btn-outline-primary">Contact Me</a>
+            <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
         </div>
     </div>
 </nav>
 
-<<!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero-section py-5">
     <div class="container">
         <div class="row align-items-center">
             <!-- Text Section -->
             <div class="col-lg-6">
                 <p class="small-text">Hey, I am John</p>
-                <h1>I create <span class="highlight">product design</span> and brand experience</h1>
-                <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <h1>I create <span class="highlight">product design</span> <br>and brand experience</h1>
+                <p class="subtext py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 <a href="#" class="btn btn-primary">Get In Touch</a>
             </div>
             
@@ -70,10 +70,10 @@
 </section>
 
 <!-- Expertise Section -->
-<section class="expertise-section py-5">
+<section class="expertise-section py-5" id="expertise">
     <div class="container">
         <!-- Section Header -->
-        <div class="text-center mb-5">
+        <div class="text-left mb-5 py-4">
             <p class="small-text">My Skills</p>
             <h2 class="section-title">My Expertise</h2>
         </div>
@@ -114,7 +114,7 @@
 
 
 <!-- About Me Section -->
-<section class="about-section py-5">
+<section class="about-section py-5" id="about">
     <div class="container">
         <div class="row align-items-center">
             <!-- Image Section -->
@@ -136,7 +136,7 @@
 
 
 <!-- Portfolio Section -->
-<section class="portfolio-section py-5">
+<section class="portfolio-section py-5" id="portfolio"> 
     <div class="container">
         <!-- Section Header -->
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -144,12 +144,12 @@
                 <p class="small-text">Recent Projects</p>
                 <h2 class="section-title">My Portfolio</h2>
             </div>
-            <a href="https://dribbble.com" target="_blank" class="btn btn-dribbble">Visit My Dribbble</a>
+            <a href="https://dribbble.com" target="_blank" class="btn btn-dribbble"><span><img src="./asset/Social icon.png" height="36" alt=""></span>Visit My Dribbble</a>
         </div>
         
         <!-- Portfolio Cards -->
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="portfolio-card">
                     <img src="./asset/portfolio1.png" alt="Ahuse Project" class="project-image">
                     <h3>Ahuse</h3>
@@ -157,7 +157,7 @@
                     <a href="#" class="project-link">View In Dribbble &rarr;</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="portfolio-card">
                     <img src="./asset/portfolio2.png" alt="App Dashboard Project" class="project-image">
                     <h3>App Dashboard</h3>
@@ -165,7 +165,7 @@
                     <a href="#" class="project-link">View In Dribbble &rarr;</a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="portfolio-card">
                     <img src="./asset/portfolio3.png" alt="Easy Rent Project" class="project-image">
                     <h3>Easy Rent</h3>
@@ -179,10 +179,10 @@
 
 
 <!-- Testimonials Section -->
-<section class="testimonials-section py-5">
+<section class="testimonials-section py-5" id="testimonial">
     <div class="container">
         <!-- Section Header -->
-        <div class="text-center mb-5">
+        <div class="text-left mb-5">
             <p class="small-text">Clients Feedback</p>
             <h2 class="section-title">Customer testimonials</h2>
         </div>
@@ -234,7 +234,7 @@
 
 
 <!-- Contact Section -->
-<section class="contact-section py-5">
+<section class="contact-section py-5" id="contact">
     <div class="container">
         <!-- Section Header -->
         <div class="text-center mb-4">
@@ -248,19 +248,19 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="First name">
+                    <input type="text" class="form-control" id="firstName" placeholder="">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                    <input type="text" class="form-control" id="lastName" placeholder="">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <input type="email" class="form-control" id="email" placeholder="">
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="phone">Phone number</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                    <input type="tel" class="form-control" id="phone" placeholder="">
                 </div>
                 <div class="col-12 mb-3">
                     <label for="topic">Choose a topic</label>
@@ -292,24 +292,24 @@
 <!-- Footer Section -->
 <footer class="footer-section py-4">
     <div class="container">
+        <!-- Top Row -->
         <div class="row align-items-center mb-3">
             <!-- Left: Logo -->
             <div class="col-lg-3 col-md-4 text-center text-md-start mb-3 mb-md-0">
                 <img src="./asset/Logo.png" alt="Logo" class="footer-logo">
             </div>
-            
+
             <!-- Center: Navigation Links -->
             <div class="col-lg-6 col-md-4 text-center mb-3 mb-md-0">
                 <nav>
-                    <a href="#" class="footer-link">Home</a>
-                    <a href="#" class="footer-link">Portfolio</a>
-                    <a href="#" class="footer-link">About me</a>
-                    <a href="#" class="footer-link">Contact</a>
-                    <a href="#" class="footer-link">Testimonials</a>
-                    <a href="#" class="footer-link">Portfolio</a>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#portfolio" class="footer-link">Portfolio</a>
+                    <a href="#about" class="footer-link">About me</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                    <a href="#testimonial" class="footer-link">Testimonials</a>
                 </nav>
             </div>
-            
+
             <!-- Right: Social Media Icons -->
             <div class="col-lg-3 col-md-4 text-center text-md-end">
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -318,17 +318,17 @@
                 <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        
+
         <!-- Divider -->
-        <hr>
-        
+        <hr class="hr">
+
         <!-- Bottom Row -->
         <div class="row align-items-center mt-3">
             <!-- Left: Made with Love -->
             <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
                 <p>Made with <span class="heart">❤️</span> by Airdokan</p>
             </div>
-            
+
             <!-- Right: Policy Links -->
             <div class="col-md-8 text-center text-md-end">
                 <a href="#" class="footer-policy-link">Privacy Policy</a>
@@ -338,6 +338,7 @@
         </div>
     </div>
 </footer>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
